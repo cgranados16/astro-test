@@ -1,0 +1,22 @@
+{
+  "name": "astro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/lit": "^3.0.2",
+    "@cgranados/material-web-library": "^0.0.4",
+    "@lit-labs/ssr": "^3.1.8",
+    "@material/web": "^1.0.0",
+    "astro": "^3.3.1"
+  },
+  "devDependencies": {
+    "sass": "^1.69.3"
+  }
+}
