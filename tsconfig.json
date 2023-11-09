@@ -1,24 +1,26 @@
 {
-  "extends": "astro/tsconfigs/strict",
-  "compilerOptions": {
-    "target": "ES2020",
-    "experimentalDecorators": true,
-    "useDefineForClassFields": false,
-    "module": "ESNext",
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "skipLibCheck": true,
-
-    /* Bundler mode */
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
-  }
+    "extends": "astro/tsconfigs/base",
+    "compilerOptions": {
+      "moduleResolution": "node",
+      "module": "ES2022",
+      "lib": ["es2020"],
+      "target": "es2019",
+      "importsNotUsedAsValues": "error",
+      "isolatedModules": true,
+      "resolveJsonModule": true,
+      "sourceMap": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "allowJs": true,
+      "checkJs": true,
+      "baseUrl": ".",
+      "paths": {
+        "$components": ["./src/components"],
+        "$": ["./src"]
+      },
+      "types": ["astro/env"],
+      "strictNullChecks": true
+    },
+    "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts"],
 }
