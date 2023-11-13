@@ -1,0 +1,11 @@
+{
+  "name": "astro-monorepo",
+  "version": "0.0.1",
+  "description": "Monorepo Project to test Cloudcannon capabilities to handle multiple projects in a single repo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
